@@ -27,6 +27,7 @@ const teamRoutes = require('./Routers/TeamRoutes');
 const aboutUsRoutes = require('./Routers/AboutUsRoutes');
 const testimonialRoutes = require('./Routers/TestimonialRoutes');
 const footerRoutes = require('./Routers/FooterRoutes');
+const enquiryRoutes = require('./Routers/enquiryRoutes');
 
 // -------------------- ROUTES USE ------------------------
 app.use('/', bannerRoutes);
@@ -34,6 +35,7 @@ app.use('/', teamRoutes);
 app.use('/', aboutUsRoutes);
 app.use('/', testimonialRoutes);
 app.use('/', footerRoutes);
+app.use('/api', enquiryRoutes);
 
 // Start Server
 app.listen(process.env.Port, '0.0.0.0', () => {
